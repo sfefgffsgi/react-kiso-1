@@ -1,42 +1,53 @@
-#root {
+* {
+  box-sizing: border-box;
+}
+
+#root{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  width: 100%;
+  height: 100px;
+  padding: 30px 4% 10px;
+  background-color: #e3f6f5;
+  /* position: fixed; */
+  top: 0;
+}
+header h1{
+  font-size:large
+}
+
+main{
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+main h1{
+  font-size: larger;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+.card ul {
+  margin: 0; /*余白をリセット*/
+  padding: 0; /*余白をリセット*/
+  list-style-type: none; /*マーカーを削除*/
+  border: solid #3dbfb8; /*枠線*/
+  border-width:1px 1px 0px 1px; /*枠線 太さ 上右下左*/
+ }
+ .card ul li {
+  padding: 10px 20px; /*余白*/
+  background: #e3f6f5; /*背景色*/
+  border-bottom: solid 1px #3dbfb8;  /* 枠線・下 */
+ }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ .pagination {
+  margin: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.pagination button{
+  border: solid 1px #3dbfb8;
+  background: #e3f6f5;
+  margin: 5px;
 }
