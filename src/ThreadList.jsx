@@ -35,12 +35,6 @@ export const ThreadList = () => {
         <a id='create-thread' href='/create-thread'>スレッド作成</a>
         <h1>新着スレッド</h1>
         <div className="card">
-          <PaginationPart
-            offset={offset}
-            setOffset={setOffset}
-            onClickFunction={fetchThreadList}
-            retData={threadList}
-          />
           <ThreadListContainer
             threadList={threadList}
           />

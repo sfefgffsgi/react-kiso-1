@@ -5,6 +5,7 @@ import './App.css'
 
 import { ThreadList } from './ThreadList'
 import { CreateThread } from './CreateThread'
+import { Threads } from './Threads'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ThreadList />} />
           <Route path="/create-thread" element={<CreateThread />} />
+          <Route path="/threads/:thread_id" element={<Threads />} />
         </Routes>
     </BrowserRouter>
   )

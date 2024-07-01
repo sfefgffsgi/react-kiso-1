@@ -44,6 +44,31 @@ main h1{
   background: #e3f6f5; /*背景色*/
   border-bottom: solid 1px #3dbfb8;  /* 枠線・下 */
  }
+ .card ul li:has(a){
+  padding: 0px
+}
+ .card ul li a{
+  display:block;
+  padding: 10px;
+  color: black;
+  font-weight: normal;
+}
+.card ul li a:hover{
+  background: #3dbfb8;
+}
+
+.card ul li:has(div){
+  padding: 0px
+}
+ .card ul li div{
+  display:block;
+  padding: 10px;
+  color: black;
+  font-weight: normal;
+}
+.card ul li div:hover{
+  background: #3dbfb8;
+}
 
  .pagination {
   margin: 10px;
@@ -97,4 +122,33 @@ input[type="submit"]{
 input[type="submit"]:hover{
   background: #3dbfb8;
   border: #3dbfb8;
+}
+
+#post-list{
+  display: 'flex';
+  flex-direction:column;
+}
+
+#post-list li{
+  background: #ffffff;
+  pointer-events: none;
+}
+
+.thread-container{
+  display: flex;
+}
+
+#post-form-container{
+  margin: 0px 10px;
+  padding: 10px 20px;
+}
+
+#post-form-container textarea {
+  resize: none;
+  width: 100%;
+  height: 5.5em;
+}
+
+.half{
+  width: 50%;
 }
