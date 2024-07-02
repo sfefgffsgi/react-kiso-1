@@ -8,7 +8,7 @@ export const PostListContainer = ({postList}) => {
     }
 
     return (
-        <ul id="post-list">
+        <ul id="post-list" style={{display: 'flex'}}>
             {postList.map((post, i) => (
                 <li id={post.id} style={{order: -i}}>
                     {post.post.split('\n').map(t => (

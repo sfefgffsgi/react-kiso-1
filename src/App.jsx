@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
         <Routes>
           <Route path="/" element={<ThreadList />} />
-          <Route path="/create-thread" element={<CreateThread />} />
+          <Route path="/threads/new" element={<CreateThread />} />
           <Route path="/threads/:thread_id" element={<Threads />} />
         </Routes>
     </BrowserRouter>

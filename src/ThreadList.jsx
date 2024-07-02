@@ -32,7 +32,7 @@ export const ThreadList = () => {
     <>
       <Header />
       <main>
-        <a id='create-thread' href='/create-thread'>スレッド作成</a>
+        <a id='create-thread' href='/threads/new'>スレッド作成</a>
         <h1>新着スレッド</h1>
         <div className="card">
           <ThreadListContainer
